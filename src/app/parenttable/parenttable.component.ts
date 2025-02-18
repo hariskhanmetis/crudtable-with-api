@@ -34,7 +34,7 @@ export class ParenttableComponent implements OnInit {
     console.log('Deleting User');
 
     this.apiService.deleteUser(id).subscribe(() => {
-      console.log(`✅ User with ID ${id} deleted successfully.`);
+      console.log(`User with ID ${id} deleted successfully.`);
     });
   }
 

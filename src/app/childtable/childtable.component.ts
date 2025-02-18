@@ -26,7 +26,7 @@ export class ChildtableComponent implements OnDestroy, AfterViewInit{
   }
 
   ngAfterViewInit(): void {
-    console.log("✅ ChildTableComponent View has been fully initialized.");
+    console.log("ChildTableComponent View has been fully initialized.");
     console.log("Current Users:", this.users);
   }
 

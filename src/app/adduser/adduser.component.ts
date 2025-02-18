@@ -33,7 +33,7 @@ export class AddUserComponent implements OnInit {
 
       this.apiService.addUser(newUser).subscribe({
         next: (response) => { 
-            console.log('✅ User added:', response);
+            console.log('User added:', response);
             this.router.navigate(['/']); 
         }
     });
