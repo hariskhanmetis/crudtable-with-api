@@ -1,0 +1,22 @@
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Company Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Metis International</td>
+                <td>
+                    <button class="view-users" (click)="viewUsers()">View Users</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div *ngIf="showChildTable">
+    <app-childtable [users]="users" (deleteUser)="deleteUser($event)" (editUser)="editUser($event)"></app-childtable>
+</div>

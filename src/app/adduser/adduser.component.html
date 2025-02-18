@@ -1,0 +1,18 @@
+<div class="form-container">
+    <h2>Add New User</h2>
+    <form [formGroup]="userForm" (ngSubmit)="addUser()">
+        <label for="name">Name</label>
+        <input type="text" formControlName="name" id="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" formControlName="email" id="email" required>
+
+        <label for="phone">Phone</label>
+        <input type="text" formControlName="phone" id="phone" required>
+
+        <label for="website">Website</label>
+        <input type="text" formControlName="website" id="website" required>
+
+        <button type="submit" [disabled]="userForm.invalid">Submit</button>
+    </form>
+</div>
