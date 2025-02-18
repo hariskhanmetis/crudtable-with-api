@@ -35,6 +35,7 @@ export class ParenttableComponent implements OnInit {
 
     this.apiService.deleteUser(id).subscribe(() => {
       console.log(`User with ID ${id} deleted successfully.`);
+      this.fetchUsers();
     });
   }
 
@@ -46,6 +47,7 @@ export class ParenttableComponent implements OnInit {
         console.log(`User is being edited`, response);
       }
     });
+    this.fetchUsers();
   }
 
 }

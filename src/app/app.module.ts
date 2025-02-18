@@ -9,7 +9,6 @@ import { ParenttableComponent } from './parenttable/parenttable.component';
 import { ChildtableComponent } from './childtable/childtable.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { RouterOutlet } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -24,7 +23,6 @@ import { RouterOutlet } from '@angular/router';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-   // RouterOutlet
   ],
   providers: [],
   bootstrap: [AppComponent]
