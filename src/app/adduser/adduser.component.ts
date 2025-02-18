@@ -31,13 +31,12 @@ export class AddUserComponent implements OnInit {
     if (this.userForm.valid) {
       const newUser: User = this.userForm.value;
 
-      this.apiService.addUser(newUser).subscribe((response) => {
-        console.log('✅ User added:', response);
-        this.router.navigate(['/']);
-      },
-      error => {
-        console.error('Error adding user:', error);
-      });
+      this.apiService.addUser(newUser).subscribe({
+        next: (response) => { 
+            console.log('✅ User added:', response);
+            this.router.navigate(['/']); 
+        }
+    });
     }
   }
 }
