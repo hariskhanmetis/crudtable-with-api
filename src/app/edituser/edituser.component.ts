@@ -11,7 +11,7 @@ import { User } from '../models/user.model';
 })
 export class EditUserComponent implements OnInit {
   userForm!: FormGroup;
-  userId!: number;
+  userId!: string;
 
   constructor(
     private route: ActivatedRoute,
@@ -21,7 +21,7 @@ export class EditUserComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.userId = Number(this.route.snapshot.paramMap.get('id'));
+    this.userId = String(this.route.snapshot.paramMap.get('id'));
 
     this.userForm = this.fb.group({
       name: ['', [Validators.required]],

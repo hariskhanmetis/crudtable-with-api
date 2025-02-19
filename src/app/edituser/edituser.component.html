@@ -1,18 +1,24 @@
-<div class="form-container" *ngIf="userForm">
-    <h2>Edit Information</h2>
-    <form [formGroup]="userForm" (ngSubmit)="editUser()">
-        <label for="name">Name</label>
-        <input type="text" formControlName="name" id="name" #name required>
-
-        <label for="email">Email</label>
-        <input type="email" formControlName="email" id="email" required>
-
-        <label for="phone">Phone</label>
-        <input type="text" formControlName="phone" id="phone" required>
-
-        <label for="website">Website</label>
-        <input type="text" formControlName="website" id="website" required>
-
-        <button type="submit" [disabled]="userForm.invalid">Update</button>
-    </form>
+<div class="container mt-5">
+    <div class="card- shadow-lg p-5 w-50 mx-auto">
+        <h3 class="text-center text">Edit User</h3>
+        <form [formGroup]="userForm" (ngSubmit)="editUser()">
+            <div class="mb-2">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" formControlName="name" id="name" required>
+            </div>
+            <div class="mb-2">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" formControlName="email" id="email" required>
+            </div>
+            <div class="mb-2">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="text" class="form-control" formControlName="phone" id="phone" required>
+            </div>
+            <div class="mb-2">
+                <label for="website" class="form-label">Website</label>
+                <input type="text" class="form-control" formControlName="website" id="website" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 mt-3">Update</button>
+        </form>
+    </div>
 </div>

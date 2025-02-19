@@ -1,6 +1,6 @@
-<div class="table-container">
-    <table>
-        <thead>
+<div class="container mt-4">
+    <table class="table table-hover table-bordered text-center">
+        <thead class="table-dark">
             <tr>
                 <th>ID</th>
                 <th>Name</th>
@@ -11,18 +11,18 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let user of users">
+            <tr class="table table-light" *ngFor="let user of users">
                 <td>{{ user.id }}</td>
                 <td>{{ user.name }}</td>
                 <td>{{ user.email }}</td>
                 <td>{{ user.phone }}</td>
                 <td>{{ user.website }}</td>
                 <td>
-                    <button class="edit-user" (click)="onEdit(user)">Edit</button>
-                    <button class="delete-user" (click)="onDelete(user.id)">Delete</button>    
+                    <button class="btn btn-primary btn-sm me-2" (click)="onEdit(user)">Edit</button>
+                    <button class="btn btn-danger btn-sm" (click)="onDelete(user.id)">Delete</button>    
                 </td>
             </tr>
         </tbody>
     </table>
-    <button class="add-user" [routerLink]="['/adduser']" id="addUserBtn">Add New User</button>
+    <button class="btn btn-success d-block mx-auto mt-3 mb-3" [routerLink]="['/adduser']" id="addUserBtn">Add New User</button>
 </div>

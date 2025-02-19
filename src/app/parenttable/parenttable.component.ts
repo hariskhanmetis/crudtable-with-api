@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../services/api.service';
 import { User } from '../models/user.model';
 
-
 @Component({
   selector: 'app-parenttable',
   templateUrl: './parenttable.component.html',
@@ -47,7 +46,6 @@ export class ParenttableComponent implements OnInit {
         console.log(`User is being edited`, response);
       }
     });
-    this.fetchUsers();
   }
 
 }

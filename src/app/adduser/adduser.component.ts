@@ -16,7 +16,9 @@ export class AddUserComponent implements OnInit {
     private fb: FormBuilder,
     private apiService: ApiService,
     private router: Router
-  ) {}
+  ) {
+    console.log("New User is being added...");
+  }
 
   ngOnInit(): void {
     this.userForm = this.fb.group({
