@@ -1,20 +1,6 @@
 {
   "users": [
     {
-      "id": "a20",
-      "name": "Jane Smith",
-      "email": "jane.smith@example.net",
-      "phone": "987-654-3210",
-      "website": "janesmith.net"
-    },
-    {
-      "id": "c89",
-      "name": "Charlie Wilson",
-      "email": "charlie.wilson@example.com",
-      "phone": "222-333-4444",
-      "website": "charliewilson.com"
-    },
-    {
       "id": "f77",
       "name": "Frank Thomas",
       "email": "frank.thomas@example.com",
